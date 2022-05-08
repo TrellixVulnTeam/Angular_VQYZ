@@ -1,0 +1,41 @@
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0">
+    <img routerLink="/dashboard" routerLinkActive="active" src="https://res.cloudinary.com/djjocjsr5/image/upload/v1652018740/lazy_notes-logos_transparent_xlllqg.png" width="50" width="50" alt="There supposed to be a logo somewhere">
+  </a>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="fas fa-user" class="nav-link"  routerLink="/dashboard" routerLinkActive="active"><i class="fas fa-user"></i>Twój profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/game" routerLinkActive="active"><i class="fas fa-dice-d20"></i>Gra</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/video" routerLinkActive="active"><i class="fas fa-circle-notch"></i>Wideo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/form" routerLinkActive="active"><i class="fas fa-envelope"></i>Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="authService.SignOut()">
+              <i class="fas fa-sign-out-alt"></i>Wyloguj się
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="inner-adjust">
+        <iframe width="1550" height="800" src="https://www.youtube.com/embed/7H7cTSml5zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </main>
+
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+    <div class="authBlock">
+      <h3>Zaloguj się</h3>
+      <div class="formGroup">
+        <input
+          type="text"
+          class="formControl"
+          placeholder="Nazwa uzytkownika"
+          #userName
+          required
+        />
+      </div>
+
+      <div class="formGroup">
+        <input
+          type="password"
+          class="formControl"
+          placeholder="Hasło"
+          #userPassword
+          required
+        />
+      </div>
+
+      <div class="formGroup">
+        <input
+          type="button"
+          class="btn btnPrimary"
+          value="Zaloguj się"
+          (click)="authService.SignIn(userName.value, userPassword.value)"
+        />
+      </div>
+
+      <div class="formGroup">
+        <span class="or"><span class="orInner">Albo</span></span>
+      </div>
+
+      <div class="formGroup">
+        <button
+          type="button"
+          class="btn googleBtn"
+          (click)="authService.GoogleAuth()"
+        >
+          <i class="fab fa-google-plus-g"></i>
+          Zaloguj się z Google
+        </button>
+      </div>
+
+      <div class="forgotPassword">
+        <span routerLink="/forgot-password">Zapomniałeś hasła?</span>
+      </div>
+    </div>
+
+    <div class="redirectToLogin">
+      <span
+        >Chciałbyś dołączyć?<span
+          class="redirect"
+          routerLink="/register-user"
+        >
+          Dołącz</span
+        ></span
+      >
+    </div>
+  </div>
+</div>
