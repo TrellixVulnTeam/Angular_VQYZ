@@ -1,0 +1,33 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" routerLink="/mainn">
+        <img routerLink="/mainn" routerLinkActive="active" src="https://res.cloudinary.com/djjocjsr5/image/upload/v1652018740/lazy_notes-logos_transparent_xlllqg.png" width="80" width="80" alt="There supposed to be a logo somewhere">
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="peach" rounded="true" mdbWavesEffect onclick='alert("Dziekujemy za twoja opinie")'>Strona Główna</button>
+            <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="aqua" rounded="true" mdbWavesEffect onclick='alert("Dziekujemy za twoja opinie")'>O nas</button>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="purple" rounded="true" mdbWavesEffect onclick='alert("Dziekujemy za twoja opinie")'>Cennik</button>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="purple" rounded="true" mdbWavesEffect routerLink="/homepage">Sklep</button>
+        </li>
+      </ul>
+      <button mdbBtn type="button" gradient="purple" rounded="true" mdbWavesEffect routerLink="/register-user" style="text-align: center;">Rejestracja</button>
+      <button mdbBtn type="button" gradient="purple" rounded="true" mdbWavesEffect routerLink="/sign-in" style="text-align: center;">Logowanie</button>
+    </links>
+  </mdb-navbar>
+  <div>
+    <ul fxLayout="row">
+        <app-product *ngFor="let p of products" [product]="p"></app-product>
+    </ul>
+    
+
+ 

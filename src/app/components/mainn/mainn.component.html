@@ -1,0 +1,222 @@
+<div class="body">
+  <script>
+    
+  </script>
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" routerLink="/mainn">
+        <img routerLink="/mainn" routerLinkActive="active" src="https://res.cloudinary.com/djjocjsr5/image/upload/v1652018740/lazy_notes-logos_transparent_xlllqg.png" width="80" width="80" alt="There supposed to be a logo somewhere">
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="peach" rounded="true" mdbWavesEffect onclick='alert("Dziekujemy za twoja opinie")'>Strona Główna</button>
+            <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="aqua" rounded="true" mdbWavesEffect onclick='alert("Dziekujemy za twoja opinie")'>O nas</button>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="purple" rounded="true" mdbWavesEffect onclick='alert("Dziekujemy za twoja opinie")'>Cennik</button>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <button mdbBtn type="submit" gradient="purple" rounded="true" mdbWavesEffect routerLink="/homepage">Sklep</button>
+        </li>
+      </ul>
+      <button mdbBtn type="button" gradient="purple" rounded="true" mdbWavesEffect routerLink="/register-user" style="text-align: center;">Rejestracja</button>
+      <button mdbBtn type="button" gradient="purple" rounded="true" mdbWavesEffect routerLink="/sign-in" style="text-align: center;">Logowanie</button>
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view intro-2">
+    <div class="full-bg-img">
+      <div style="background-image: url('https://res.cloudinary.com/djjocjsr5/image/upload/v1653302105/wp2675445-wallpaper-hd-pc_1_madkuz.jpg');" class="mask rgba-white-light flex-center">
+        <div class="container text-center white-text wow fadeInUp">
+          <h2>This Navbar is fixed and transparent</h2>
+          <br>
+          <h5>It will always stay visible on the top, even when you scroll down</h5>
+          <p>Navbar's background will switch from transparent to solid color while scrolling down</p>
+          <br>
+          <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5">
+      <div class="col-md-12">
+        <div class="card-deck" >
+          <!-- Card -->
+          <mdb-card>
+            <div mdbWavesEffect>
+              <!-- Card img -->
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/16.webp" alt="Card image cap"></mdb-card-img>
+            </div>
+            <!--Card content-->
+            <mdb-card-body>
+              <!--Title-->
+              <mdb-card-title>
+                <h4>Card Title</h4>
+              </mdb-card-title>
+        
+              <!--Text-->
+              <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </mdb-card-text>
+        
+              <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+            </mdb-card-body>
+          </mdb-card>
+        
+          <!-- Card -->
+          <mdb-card>
+            <div mdbWavesEffect>
+              <!-- Card img -->
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/14.webp" alt="Card image cap"></mdb-card-img>
+            </div>
+            <!--Card content-->
+            <mdb-card-body>
+              <!--Title-->
+              <mdb-card-title>
+                <h4>Card Title</h4>
+              </mdb-card-title>
+        
+              <!--Text-->
+              <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </mdb-card-text>
+        
+              <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+            </mdb-card-body>
+          </mdb-card>
+        
+          <!-- Card -->
+          <mdb-card>
+            <div mdbWavesEffect>
+              <!-- Card img -->
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/15.webp" alt="Card image cap"></mdb-card-img>
+            </div>
+            <!--Card content-->
+            <mdb-card-body>
+              <!--Title-->
+              <mdb-card-title>
+                <h4>Card Title</h4>
+              </mdb-card-title>
+        
+              <!--Text-->
+              <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </mdb-card-text>
+        
+              <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+            </mdb-card-body>
+          </mdb-card>
+        </div>
+        <!--card wrapper end-->
+        
+        <div style="margin: 1%;">
+        <!--Carousel Wrapper-->
+<mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+  <!--First slide-->
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop>
+      <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4"/>
+    </video>
+  </mdb-carousel-item>
+  <!--/First slide-->
+  <!--Second slide-->
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop>
+      <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4"/>
+    </video>
+  </mdb-carousel-item>
+  <!--/Second slide-->
+  <!--Third slide-->
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop>
+      <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4"/>
+    </video>
+  </mdb-carousel-item>
+  <!--/Third slide-->
+</mdb-carousel>
+</div>
+<!--Carousel Wrapper-->
+
+        </div>
+        </main>
+          <footer class="bg-light text-center text-white" stickybottom>
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #3b5998;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #55acee;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #dd4b39;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #ac2bac;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #0082ca;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #333333;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 No Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">Mariusz Kuc</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        </div>

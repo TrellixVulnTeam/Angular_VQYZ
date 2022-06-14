@@ -18,12 +18,31 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { Video } from './components/video/video.component';
 import { Form } from './components/form/form.component';
+import { Spotify } from './components/spotify/spotify.component';
+import { Editor } from './components/editor/editor.component';
+import { Mainn } from './components/mainn/mainn.component';
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 import { AppRoutingModule } from './app-routing.module';
 
 
 import { AuthService } from './shared/services/auth.service';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
+import {MatButtonModule} from '@angular/material/button';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 
 @NgModule({
@@ -37,6 +56,14 @@ import { AuthService } from './shared/services/auth.service';
     Game,
     Video,
     Form,
+    Spotify,
+    Editor,
+    Mainn,
+    HomepageComponent,
+    ProductsComponent,
+    ProductComponent,
+    ProductPageComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +73,17 @@ import { AuthService } from './shared/services/auth.service';
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     AppRoutingModule,
+    RichTextEditorModule,
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatButtonModule,
+    MatCardModule,
+    MatChipsModule,
+    MatIconModule,
+    MatSelectModule,
+    MatToolbarModule,
+    IvyCarouselModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent],
